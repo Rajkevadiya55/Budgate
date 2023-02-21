@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".expense"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#00668B">
+
+
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/ic_arrow_back"
+            app:tint="#f2f2f2" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Add expense"
+            android:textColor="#f2f2f2"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Income"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="20dp"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edttexpense"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="#E1E3E5"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:inputType="number"
+        android:paddingStart="10dp">
+
+    </com.google.android.material.textfield.TextInputEditText>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pyment Method"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="20dp"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edttpayment"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="#E1E3E5"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:inputType="text"
+        android:paddingStart="10dp">
+
+    </com.google.android.material.textfield.TextInputEditText>
+
+    <Button
+        android:id="@+id/saveto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:backgroundTint="#00668B"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="save"/>
+
+
+</LinearLayout>
+
